@@ -1,0 +1,27 @@
+<!-- newton/accounts/templates/accounts/create_superuser.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Superuser</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Superuser</h1>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Create Superuser</button>
+        </form>
+    </div>
+</body>
+</html>
