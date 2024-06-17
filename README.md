@@ -77,7 +77,7 @@ This command starts the Django development server, allowing you to test your app
 
 # Superuser Creation Page
 # Accessing the Page
-# Navigate to http://127.0.0.1:8000/accounts/create_superuser/ 
+# Navigate to http://_Given_Ip-add_/accounts/create_superuser/ 
 to access the superuser creation form. 
 This form allows you to create superusers directly from the web interface.
 
